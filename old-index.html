@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Marine</title>
+    <link type="image/png" href="assets/favicon.png" alt="Master Marine">
+
+    <style>
+        .body,
+        html {
+            height: 100%;
+            margin: 0px;
+        }
+
+        .header {
+            padding: 4px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 32px;
+            box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .slideshow-container {
+            height: 400px;
+            max-width: 1500px;
+            width: 100%;
+            overflow: hidden;
+            margin: 24px 32px;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .parallax {
+            background-image: url(assets/slideshow.png);
+            min-height: 50%;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+        }
+
+        .text-container {
+            text-align: start;
+            width: 100%;
+            max-width: 1000px;
+            margin: 16px 32px;
+        }
+
+        .footer {
+            padding: 4px 16px;
+            display: flex;
+            box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .slideshow-container {
+                height: 250px;
+            }
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .header {
+                justify-content: center;
+            }
+
+            .slideshow-container {
+                height: 170px;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="header">
+        <img src="assets/logo.png" loading="lazy" />
+
+        <div class="email">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #02799e
+                    }
+                </style>
+                <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+            <a style="text-decoration: none;"
+                href="mailto:info@mastermarinecompany.com">info@mastermarinecompany.com</a>
+        </div>
+    </header>
+    <div class="parallax"></div>
+    <!-- <section class="section">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="assets/slideshow.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/slideshow1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/slideshow2.png" style="width:100%">
+            </div>
+        </div>
+    </section> -->
+
+    <section class="section">
+        <div class="text-container">
+            <h3 style="text-align: center; color: #02799e;">We Are Master Marine</h3>
+            <p>
+                Our company is an Egyptian marine company which was established in 2019 that works in operating,
+                supplying,
+                chartering, forwarding, and providing marine vessels of all kinds.
+                Our company also works in the management of marine projects, contributes to the possibility of providing
+                commercial diving crews, and as a marine broker to provide crews for marine vessels.
+                Master Marine is led by marine experts in various marine fields with more than thirty years of
+                experience.
+                We are always working hard to satisfy and provide marine consultations to our customers, while making
+                sure
+                all of their needs are provided in order to contribute to the advancement of the maritime field as we
+                have
+                always been!
+
+            </p>
+            <div class="clr"></div>
+            <div class="video-container" style="padding-bottom: 0px">
+                <video width="400" controls class="master-marine-video" style="width: 100%;">
+                    <source src="assets/mastermarinecompany.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="email">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #02799e
+                    }
+                </style>
+                <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+            <a style="text-decoration: none;"
+                href="mailto:info@mastermarinecompany.com">info@mastermarinecompany.com</a>
+        </div>
+        <p class="copyright">
+            Copyright &copy; <span style="color: #02799e; font-weight: bold;">Master Marine</span>
+            <span>
+                2019 -
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </span>
+            <span>All rights reserved</span>
+        </p>
+    </footer>
+
+    <!-- <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script> -->
+</body>
+
+</html>
