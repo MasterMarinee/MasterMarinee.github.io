@@ -189,6 +189,15 @@ footer {
     margin-top: 2rem;
 }
 
+    
+.logo-and-name-img {
+    display: block;
+} 
+
+.logo-img {
+    display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
@@ -211,5 +220,13 @@ footer {
 
     .hero h1 {
         font-size: 2.5rem;
+    }
+    
+    .logo-and-name-img {
+        display: none;
+    } 
+
+    .logo-img {
+        display: block;
     }
 }
